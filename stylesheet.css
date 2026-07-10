@@ -5,11 +5,16 @@
     font-family: 'Poppins', sans-serif;
 }
 
+<<<<<<< HEAD
 html,
 body {
     min-height: 100%;
     color: #ededed;
     background: #081b29;
+=======
+body {
+    color: #ededed;
+>>>>>>> 15295d62bea4f6a6fd90541ee20bd90aa7f27cf2
 }
 
 .header {
@@ -18,7 +23,11 @@ body {
     left: 0;
     width: 100%;
     padding: 20px 10%;
+<<<<<<< HEAD
     background: #081b29;
+=======
+    background: transparent;
+>>>>>>> 15295d62bea4f6a6fd90541ee20bd90aa7f27cf2
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -31,12 +40,18 @@ body {
     color: #fff;
     text-decoration: none;
     font-weight: 600;
+<<<<<<< HEAD
     cursor: default;
     opacity: 0;
     animation: slideRight 1s ease forwards;
 }
 
 .navbar a {
+=======
+}
+
+.navbar a{
+>>>>>>> 15295d62bea4f6a6fd90541ee20bd90aa7f27cf2
     display: inline-block;
     font-size: 25px;
     color: #fff;
@@ -44,9 +59,12 @@ body {
     font-weight: 500;
     margin-left: 35px;
     transition: 0.3s;
+<<<<<<< HEAD
     opacity: 0;
     animation: slideTop .5s ease forwards;
     animation-delay: calc(.2s * var(--i));
+=======
+>>>>>>> 15295d62bea4f6a6fd90541ee20bd90aa7f27cf2
 }
 
 
@@ -54,16 +72,25 @@ body {
     color: rgb(132, 64, 221);
 }
 
+<<<<<<< HEAD
  .home {
+=======
+.home {
+>>>>>>> 15295d62bea4f6a6fd90541ee20bd90aa7f27cf2
     position: relative;
     width: 100%;
     justify-content: space-between;
     height: 100vh;
+<<<<<<< HEAD
     background: #081b29 url(Purple\ Illustrated\ Mountain\ Desktop\ Wallpaper.png) no-repeat;
+=======
+    background: #1c1522 url(Purple\ Illustrated\ Mountain\ Desktop\ Wallpaper.png) no-repeat;
+>>>>>>> 15295d62bea4f6a6fd90541ee20bd90aa7f27cf2
     background-size: cover;
     background-position: center;
     display: flex;
     align-items: center;
+<<<<<<< HEAD
     padding: 70px 10% 0;
     perspective: 1200px;
 }
@@ -239,6 +266,52 @@ body {
 
 .home-sci a {
     display: inline-flex;
+=======
+    padding:  70px 10% 0;
+}
+.home-content 
+{
+    max-width: 600px;
+}
+.home-content h3 
+{
+    font-size: 32px;
+    font-weight: 700;
+    
+}
+.home-content h3:nth-of-type(2) 
+{
+    margin-bottom: 30px;
+    
+}
+
+.home-content h3 span 
+{
+    color: #0ef;
+}
+.home-content h1 {
+  font-size: 3rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+.home-content h1 span 
+{
+    font-size: 56px;
+    font-weight: 700;
+    margin: -3px 0;
+    
+}
+.home-content p 
+{
+    font-size: 20px;
+    color: #fff;
+    margin: 10px 0 20px;
+}
+.home-sci a 
+{
+    display: inline-block;
+>>>>>>> 15295d62bea4f6a6fd90541ee20bd90aa7f27cf2
     justify-content: center;
     align-items: center;
     height: 44px;
@@ -249,6 +322,7 @@ body {
     font-size: 40px;
     color: #0ef;
     text-decoration: none;
+<<<<<<< HEAD
     transition: 0.5s;
     opacity: 0;
     animation: slideLeft 1s ease forwards;
@@ -257,12 +331,24 @@ body {
 }
 
 .home-sci a :hover {
+=======
+    margin: 30px 15px 30px 0;
+}
+
+.home-sci a :hover 
+{
+>>>>>>> 15295d62bea4f6a6fd90541ee20bd90aa7f27cf2
     background: #0ef;
     color: #081b29;
     box-shadow: 0 0 20px #0ef;
 }
+<<<<<<< HEAD
 
 .btn-box {
+=======
+.btn-box
+{
+>>>>>>> 15295d62bea4f6a6fd90541ee20bd90aa7f27cf2
     display: inline-block;
     padding: 12px 28px;
     background: #0ef;
@@ -272,6 +358,7 @@ body {
     letter-spacing: 1px;
     text-decoration: none;
     font-weight: 600;
+<<<<<<< HEAD
     opacity: 0;
     animation: slideTop 1s ease forwards;
     animation-delay: 2s;
@@ -717,4 +804,12 @@ section{
 .radial-info .text{
     font-size: 14px;
     color: #dfeff3;
+=======
+
+}
+.btn-box:hover
+{
+    
+    box-shadow: 0 0 5px cyan, 0 0 25px cyan, 0 0 50px cyan, 0 0 100px cyan, 0 0 200px cyan;    
+>>>>>>> 15295d62bea4f6a6fd90541ee20bd90aa7f27cf2
 }

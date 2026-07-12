@@ -16,17 +16,17 @@
     <a href="" class="logo">Portfolio</a>
 
     <nav class="navbar">
-        <a href="#" style="--i:1;" class="active">Home</a>
-        <a href="#" style="--i:2;">About</a>
-        <a href="#" style="--i:3;">Skills</a>
-        <a href="#" style="--i:4;">Portfolio</a>
-        <a href="#" style="--i:5;">Contact</a>
+        <a href="#home" style="--i:1;" class="active">Home</a>
+        <a href="#about" style="--i:2;">About</a>
+        <a href="#skills" style="--i:3;">Skills</a>
+        <a href="#portfolio" style="--i:4;">Portfolio</a>
+        <a href="#contact" style="--i:5;">Contact</a>
     </nav>
 
 </header>
 
 
-<section class="home">
+<section class="home" id="home">
     <div class="home-content">
         <h3>Hello, It's Me</h3>
         <h1>Saiful Islam Tanvin</h1>
@@ -35,15 +35,15 @@
            <br>strive to create applications that make a lasting impact.</p></br>
         
          <div class="home-sci">
-            <a href="#" style="--i:7;"> <i class='bx bxl-facebook'></i></a>
-            <a href="#" style="--i:8;"> <i class='bx bxl-instagram'></i></a>
-            <a href="#" style="--i:9;"> <i class='bx bxl-github'></i></a>
-            <a href="#" style="--i:10;"> <i class='bx bxl-linkedin'></i></a>
+            <a href="https://www.facebook.com/saiful.islam.1699/" target="_blank" rel="noopener noreferrer" style="--i:7;"> <i class='bx bxl-facebook'></i></a>
+            <a href="https://www.instagram.com/tanvinislam3273/" target="_blank" rel="noopener noreferrer" style="--i:8;"> <i class='bx bxl-instagram'></i></a>
+            <a href="https://github.com/Saiful1253" target="_blank" rel="noopener noreferrer" style="--i:9;"> <i class='bx bxl-github'></i></a>
+            <a href="https://www.linkedin.com/in/tanvin-islam-6b293a417/" target="_blank" rel="noopener noreferrer" style="--i:10;"> <i class='bx bxl-linkedin'></i></a>
 
         </div> 
          
         <div>
-            <a href="#" class="btn-box">More About Me</a>
+            <a href="#about" class="btn-box">More About Me</a>
             
         </div>
     </div>
@@ -63,7 +63,7 @@
         <h2>About<span>Me</span></h2>
         <h4>Software Developer!</h4>
         <p>I'm a passionate software developer with a strong foundation in programming and problem-solving. I enjoy creating innovative solutions and continuously learning new technologies to enhance my skills. My goal is to contribute to impactful projects that make a difference in the world.</p>
-        <a href="#" class="btn-box">More About Me</a>
+        <a href="Resume%20writing%20format%20Final.pdf" class="btn-box" download>Download CV</a>
     </div>
 </section>
 
@@ -74,21 +74,21 @@
              <div class="services-list">
                 <div>
                     <i class='bx bx-code-alt' style='color:#00eeff'  ></i>
-                    <h2>Software Development</h2>
-                    <p>I specialize in developing robust and scalable software applications that meet the unique needs of clients. From web development to mobile apps, I bring ideas to life through clean and efficient code.</p>
-                    <a href="#" class="read">learn more</a>
+                    <h2>Web Application Development</h2>
+                    <p>I build responsive, secure, and user-friendly web applications using ASP.NET Core, C#, HTML, CSS, JavaScript, and SQL. My focus is on creating fast, scalable, and maintainable solutions.</p>
+                    <a href="#portfolio" class="read">learn more</a>
                 </div>
                 <div>
                     <i class='bx bx-crop' style='color:#00eeff'></i>
-                    <h2>Software Development</h2>
-                    <p>I specialize in developing robust and scalable software applications that meet the unique needs of clients. From web development to mobile apps, I bring ideas to life through clean and efficient code.</p>
-                    <a href="#" class="read">learn more</a>
+                    <h2>Backend Development</h2>
+                    <p>I build reliable backend functionality using C# and ASP.NET Core MVC, including business logic, database connectivity, user authentication, and application features.</p>
+                    <a href="#portfolio" class="read">learn more</a>
                 </div>
                 <div>
-                    <i class='bx bxl-apple' style='color:#00eeff'></i>
-                    <h2>Software Development</h2>
-                    <p>I specialize in developing robust and scalable software applications that meet the unique needs of clients. From web development to mobile apps, I bring ideas to life through clean and efficient code.</p>
-                    <a href="#" class="read">learn more</a>
+                    <i class='bx bxs-data' style='color:#00eeff' ></i>
+                    <h2>Database Management</h2>
+                    <p>I design and manage SQL Server and MySQL databases, create efficient queries, and ensure secure data storage for web applications.</p>
+                    <a href="#portfolio" class="read">learn more</a>
                 </div>
              </div>
         </div>
@@ -96,10 +96,10 @@
         </div>
 
 </section>
-<h1 class="sub-title">My <span>Skills</span></h1>
+<h1 class="sub-title" id="skills">My <span>Skills</span></h1>
 
 <section>
-    <div class="container1" id="Skills">
+    <div class="container1">
         <h1 class="heading1">Project Skills</h1>
         <div class="skills-bars">
             <div class="bar"><i style="color: #c95d2e" class='bx bxs-file-html'></i>
@@ -285,13 +285,18 @@
     </div>
     <div class="contact-form">
         <form action="">
-            <input type="" placeholder="Name" required>
-            <input type="email" placeholder=""
+            <input type="" placeholder="Enter Your Name" required>
+            <input type="email" placeholder="Enter Your Email" required>
+
+            <input type="" placeholder="Enter Your Subject">
+            <textarea name="" id="" cols="40" rows="10" placeholder="Enter Your Message" required></textarea>
+            <input type="submit" value="submit" class="send">
         </form>
 
     </div>
 
 </section>
+
 
 
 

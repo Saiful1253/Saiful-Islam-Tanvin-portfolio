@@ -709,7 +709,7 @@ section{
     display: grid;
     /* Ensure 3 cards stay readable and responsive */
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    width: 100%;
+    width: 95%;
     margin: 0 auto;
     gap: 24px;
     justify-content: center;
@@ -784,31 +784,33 @@ section{
 
 .contact{
     display:grid;
-    grid-template-columns: repeat(2, 1fr);
-    align-items: center;
+    grid-template-columns: minmax(460px, 1.6fr) minmax(460px, 1.4fr);
+    align-items: start;
     gap: 3rem;
-    padding-left: 30px;
-    margin-top: 130px;
+    padding: 120px 6% 80px;
+    max-width: 1600px;
+    margin: 0 auto;
 }
 .contact-text h2{
-    font-size: 90px;
-    line-height: 1;
-    text-align: center;
+    font-size: 84px;
+    line-height: 1.05;
+    text-align: left;
 }
 .contact-text h2 span{
     color: #0ef;
 }
 .contact-text h4{
-    margin: 15px 0;
+    margin: 18px 0;
     color: rgb(228,228,228);
-    font-size: 20px;
+    font-size: 24px;
     font-weight: 600;
 }
 .contact-text p{
     color: rgb(177, 177, 177);
-    font-size: 20px;
-    line-height: 30px;
-    margin-bottom: 2rem;
+    font-size: 22px;
+    line-height: 38px;
+    margin-bottom: 3rem;
+    max-width: 860px;
 }
 .contact-list{
     margin-bottom: 3rem;
@@ -817,14 +819,10 @@ section{
     margin-bottom: 10px;
     display: block;
 }
-.contact-list li{
-    margin-bottom: 10px;
-    display: block;
-}
 .contact-list i{
     display: inline-block;
     color: #0ef;
-    font-size: 20px;
+    font-size: 24px;
     font-weight: 600;
     transition: all .40s ease;
 }
@@ -836,15 +834,15 @@ section{
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    width: 40px;
-    height: 40px;
+    width: 44px;
+    height: 44px;
     background: transparent;
     border: 2px solid #0ef;
     border-radius: 50%;
-    font-size: 20px;
+    font-size: 22px;
     color: #0ef;
     text-decoration: none;
-    margin: 30px 15px 30px 0;
+    margin: 28px 18px 28px 0;
     transition: .5s ease;
     opacity: 0;
     animation: slideLeft 1s ease forwards;
@@ -855,46 +853,57 @@ section{
     color: #000;
     box-shadow: 0 0 20px #0ef;
 }
+.contact-form{
+    width: 100%;
+    max-width: 820px;
+}
 .contact-form form{
     position: relative;
+    background: rgba(255,255,255,0.08);
+    padding: 42px;
+    border-radius: 42px;
+    box-shadow: 0 0 80px rgba(0,0,0,0.22);
 }
-.contact-form form input,form textarea{
+.contact-form form input,
+.contact-form form textarea{
     border: none;
     outline: none;
-    width: 90%;
-    padding: 18px;
-    background: #555557;
-    color: #000;
-    font-size: 1rem;
+    width: 100%;
+    padding: 22px;
+    background: #191b21;
+    color: #ededed;
+    font-size: 1.05rem;
     font-weight: 600;
-    margin-bottom: 0.5rem;
-    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+    border-radius: 22px;
 }
 .contact-form textarea{
     resize: none;
-    height: 220px;
+    min-height: 220px;
 }
 .contact-form form .send{
-    display: inline-block;
-    padding: 14px 60px;
+    display: block;
+    width: fit-content;
+    min-width: 280px;
+    margin: 0 auto;
+    padding: 18px 80px;
     background: #0ef;
-    border-radius: 40px;
-    font-size: 18px;
+    border-radius: 48px;
+    font-size: 20px;
     color: #081b29;
     letter-spacing: 1px;
     text-decoration: none;
-    font-weight: 600;
+    font-weight: 700;
     opacity: 0;
     animation: slideTop 1s ease forwards;
     animation-delay: 2s;
-    box-shadow: 0 0 5px #0ef,
-                0 0 25px #0ef;
+    box-shadow: 0 0 7px #0ef,
+                0 0 30px #0ef;
 }
 .contact-form form .send:hover {
     box-shadow: 0 0 5px cyan,
                 0 0 25px cyan, 0 0 50px cyan,
                 0 0 100px cyan, 0 0 200px cyan;
-    
 }
 
 
@@ -969,7 +978,7 @@ section{
 }
 
 .site-footer{
-    padding: 120px 10%;
+    padding: 80px 10%;
     text-align: center;
     color: #cfe8ef;
     font-size: 15px;
@@ -1023,6 +1032,12 @@ section{
         text-align: center;
         padding: 130px 7% 60px;
     }
+    .home-img{
+        order: -1;
+        width: min(78vw, 330px);
+        height: min(78vw, 330px);
+        margin: 0 auto 30px;
+    }
     .home-content h1{
         font-size: 44px;
     }
@@ -1033,10 +1048,6 @@ section{
     .about-text p,
     .contact-text p{
         font-size: 17px;
-    }
-    .home-img{
-        width: min(78vw, 330px);
-        height: min(78vw, 330px);
     }
     .about{
         grid-template-columns: 1fr;
@@ -1095,6 +1106,42 @@ section{
         grid-template-columns: 1fr;
         width: auto;
         margin: 0 7%;
+    }
+    .row{
+        position: static;
+        aspect-ratio: auto;
+        overflow: hidden;
+        border-radius: 18px;
+        margin-bottom: 28px;
+    }
+    .row img{
+        width: 100%;
+        height: auto;
+        border-radius: 18px 18px 0 0;
+    }
+    .layer{
+        position: relative;
+        width: 100%;
+        height: auto;
+        background: rgba(0, 0, 0, 0.55);
+        border-radius: 0 0 18px 18px;
+        padding: 24px 20px 28px;
+        margin-top: -6px;
+    }
+    .layer h5{
+        font-size: 24px;
+    }
+    .layer p{
+        font-size: 16px;
+        line-height: 1.75;
+        padding-bottom: 0;
+        text-shadow: none;
+    }
+    .row:hover img{
+        transform: scale(1);
+    }
+    .row:hover .layer{
+        height: auto;
     }
     .contact{
         grid-template-columns: 1fr;

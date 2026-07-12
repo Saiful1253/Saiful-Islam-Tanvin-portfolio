@@ -707,12 +707,15 @@ section{
 }
 .portfolio-content{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(min(100%, 359px), 1fr));
-    width: calc(100% - 48px);
-    margin: 0 44px;
+    /* Ensure 3 cards stay readable and responsive */
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    width: 100%;
+    margin: 0 auto;
     gap: 24px;
     justify-content: center;
+    align-items: start;
 }
+
 .row{
     position: relative;
     aspect-ratio: 16 / 9;

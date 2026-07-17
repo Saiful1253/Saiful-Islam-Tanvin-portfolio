@@ -64,7 +64,7 @@ body {
     color: rgb(132, 64, 221);
 }
 
- .home {
+.home {
     position: relative;
     width: 100%;
     justify-content: space-between;
@@ -75,7 +75,7 @@ body {
     background-position: center;
     display: flex;
     align-items: center;
-    padding: 70px 10% 40px;
+    padding: 120px 10% 40px;
     perspective: 1200px;
     flex-wrap: wrap;
     gap: 30px;
@@ -93,7 +93,7 @@ body {
     height: 410px;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end; /* Align image to the bottom so it pops out from the bottom border */
     border-radius: 50%;
     background: radial-gradient(circle at center, rgba(255,255,255,0.4), rgba(255,255,255,0) 45%),
                 radial-gradient(circle at top left, rgba(0, 238, 255, 0.7), transparent 26%),
@@ -101,13 +101,18 @@ body {
     box-shadow: 0 30px 120px rgba(0, 0, 0, 0.18),
                 0 0 120px rgba(0, 238, 255, 0.65),
                 inset 0 0 90px rgba(255,255,255,0.30);
-    overflow: visible;
+    overflow: visible; /* Crucial to let the head pop out */
     opacity: 0;
     animation: slideRight 1s ease forwards;
     animation-delay: 1.3s;
     transform-style: preserve-3d;
     transform: translateZ(0);
     flex-shrink: 0;
+    transition: transform 0.5s ease;
+}
+
+.home-img:hover {
+    transform: scale(1.05) rotateY(10deg) rotateX(5deg);
 }
 
 .home-img::before,
@@ -126,6 +131,7 @@ body {
     box-shadow: 0 0 100px rgba(0, 255, 255, 0.75),
                 inset 0 0 18px rgba(255,255,255,0.06);
     z-index: 2;
+    pointer-events: none;
 }
 
 .home-img::after {
@@ -145,13 +151,17 @@ body {
 .home-img img {
     position: relative;
     width: 96%;
-    height: 96%;
+    height: 115%; /* Make it taller than the container so it pops out of the top border */
     object-fit: cover;
-    border-radius: 50%;
+    border-radius: 0 0 200px 200px; /* Keep bottom rounded to fit the circle, but let top be free */
     border: none;
-    box-shadow: inset 0 0 30px rgba(255,255,255,0.12), 0 30px 60px rgba(0,0,0,0.28);
-    transform: translateZ(40px);
+    transform: translateY(-5%) translateZ(40px) scale(1.1); /* Lift it up and scale it to pop out */
     z-index: 3;
+    transition: transform 0.5s ease;
+}
+
+.home-img:hover img {
+    transform: translateY(-10%) translateZ(60px) scale(1.15); /* Pop out even more on hover */
 }
 
 
@@ -310,7 +320,7 @@ font-size: clamp(30px, 5vw, 60px);
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
     gap: 1.5rem;
-    padding: 80px 10%;
+    padding: 140px 10% 80px;
 }
 .about-img{
     padding-bottom: 20%;
@@ -1106,8 +1116,9 @@ section{
         flex-direction: column;
         justify-content: center;
         text-align: center;
-        padding: 130px 7% 60px;
-        gap: 30px;
+        padding: 150px 7% 100px;
+        gap: 40px;
+        min-height: 100vh;
     }
     .home-content{
         width: 100%;
@@ -1130,13 +1141,15 @@ section{
     }
     .about{
         grid-template-columns: 1fr;
-        padding: 70px 7%;
-        gap: 32px;
+        padding: 150px 7% 100px;
+        gap: 40px;
+        min-height: 100vh;
     }
     .about-img{
         min-height: auto;
         padding: 0;
         max-width: none;
+        order: 2;
     }
     .about-img .ring-only{
         width: clamp(240px, 65vw, 330px);
@@ -1293,6 +1306,9 @@ section{
         width: 100%;
         display: flex;
         justify-content: center;
+        order: 2;
+        order: 2;
+        order: 2;
     }
     .about-text{
         width: 100%;
@@ -1767,3 +1783,6 @@ section{
     color: #cfe8ef;
     line-height: 1.6;
 }
+
+
+

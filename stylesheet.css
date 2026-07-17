@@ -306,10 +306,10 @@ font-size: clamp(30px, 5vw, 60px);
         0 0 100px cyan, 0 0 200px cyan;
 }
 .about{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
+    justify-content: center;
     align-items: center;
-    gap: 1.5rem;
+    text-align: center;
     padding: 140px 10% 80px;
 }
 .about-img{
@@ -320,7 +320,7 @@ font-size: clamp(30px, 5vw, 60px);
     border-radius: 8px;
 }
 .about-text{
-    transform: translateX(-80px);
+    transform: none;
 }
 .about-text h2{
     font-size: clamp(36px, 8vw, 60px);
